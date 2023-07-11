@@ -100,6 +100,6 @@ export default function StationComponent() {
     function playStation(e) {
         setTitle(stationMap[e.target.value]);
         setSource("");
-        setSource(`https://radio.garden/api/ara/content/listen/${e.target.value}/channel.mp3`)
+        setSource(`http://radio.garden/api/ara/content/listen/${e.target.value}/channel.mp3`)
     }
 }
