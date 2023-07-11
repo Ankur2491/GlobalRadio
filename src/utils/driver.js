@@ -35,4 +35,4 @@ let getPlaces = async function() {
 	return res;
 }
 
-module.exports = {func, getPlaces}
+export default getPlaces;
