@@ -31,7 +31,7 @@ const place = require('./places');
 // 	}
 // }
 const getPlaces = async () => {
-	let x = await fetch('http://radio.garden/api/ara/content/places')
+	let x = await fetch('https://radio.garden/api/ara/content/places')
 	let json = await x.json()
 	return json
 	}

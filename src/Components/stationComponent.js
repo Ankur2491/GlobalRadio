@@ -78,7 +78,7 @@ export default function StationComponent() {
         setStationList([]);
         setSource("");
         let id = masterData[country][e.target.value]['id'];
-        let res = await fetch(`http://radio.garden/api/ara/content/page/${id}/channels`)
+        let res = await fetch(`https://radio.garden/api/ara/content/page/${id}/channels`)
         let json = await res.json();
         let contents = json.data.content;
         let arr = [];
@@ -100,6 +100,6 @@ export default function StationComponent() {
     function playStation(e) {
         setTitle(stationMap[e.target.value]);
         setSource("");
-        setSource(`http://radio.garden/api/ara/content/listen/${e.target.value}/channel.mp3`)
+        setSource(`https://radio.garden/api/ara/content/listen/${e.target.value}/channel.mp3`)
     }
 }
