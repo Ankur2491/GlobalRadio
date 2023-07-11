@@ -31,7 +31,7 @@ const place = require('./places');
 // 	}
 // }
 const getPlaces = async () => {
-	let x = await fetch('https://radio.garden/api/ara/content/places')
+	let x = await fetch('https://blazing-news-api.vercel.app/places')
 	let json = await x.json()
 	return json
 	}

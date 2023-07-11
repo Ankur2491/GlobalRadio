@@ -78,7 +78,7 @@ export default function StationComponent() {
         setStationList([]);
         setSource("");
         let id = masterData[country][e.target.value]['id'];
-        let res = await fetch(`https://radio.garden/api/ara/content/page/${id}/channels`)
+        let res = await fetch(`https://blazing-news-api.vercel.app/channels/${id}`)
         let json = await res.json();
         let contents = json.data.content;
         let arr = [];
