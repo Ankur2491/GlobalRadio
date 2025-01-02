@@ -86,12 +86,12 @@ export default function StationComponent() {
         for (let content of contents) {
             let items = content.items;
             for (let item of items) {
-                let hrefArr = item.href.split("/");
+                let hrefArr = item.page.url.split("/");
                 let stationObj = {};
-                stationObj['title'] = item.title;
+                stationObj['title'] = item.page.title;
                 stationObj['id'] = hrefArr[hrefArr.length - 1]
                 arr.push(stationObj);
-                sMap[hrefArr[hrefArr.length - 1]] = item.title;
+                sMap[hrefArr[hrefArr.length - 1]] = item.page.title;
             }
         }
         setStationList(arr);
